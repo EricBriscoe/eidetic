@@ -1,0 +1,15 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.local.json
+.DS_Store
+
+# iOS
+ios/*.xcodeproj
+ios/Config.xcconfig
+xcuserdata/
+build/
+DerivedData/
+
+# Account-specific ids; see backend/wrangler.example.jsonc
+backend/wrangler.jsonc

@@ -1,0 +1,14 @@
+// Copy to Config.xcconfig (gitignored) and fill in. Debug and Release both use it.
+// NOTE the $() trick: xcconfig treats bare // as a comment, even inside URLs.
+
+// Your worker's base URL. Local dev: http:/$()/localhost:8898
+API_BASE_URL = https:/$()/eidetic.<your-subdomain>.workers.dev
+
+// The worker's APP_TOKEN secret (local: backend/.dev.vars).
+API_TOKEN = eid_replace_me
+
+// A bundle id you can sign, e.g. com.yourname.eidetic.
+BUNDLE_ID = com.example.eidetic
+
+// Apple Team ID for device signing. Empty is fine for the simulator.
+DEVELOPMENT_TEAM =
